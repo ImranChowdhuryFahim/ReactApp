@@ -18,6 +18,7 @@ export const useHandleProdWithFav = () => {
         if (prodInFavIndex === -1) {
           postFavorite(product.Id, currentUser.Id).then(data => {
             if (data) {
+              console.log(data)
               updateFavourites([...favourites, product.Id]);
             }
           });

@@ -3,6 +3,8 @@ import { useGetCategory } from "../StaticData/StaticData";
 import { useCurrentCategory } from "./useCategory";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
+  faDesktop,
+  faHdd,
   faLaptop,
   faMobileAlt,
   faHeadphones,
@@ -18,7 +20,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Category.css";
 
-library.add(faLaptop, faMobileAlt, faHeadphones, faVideo, faCamera,
+library.add(faDesktop,
+  faHdd,faLaptop, faMobileAlt, faHeadphones, faVideo, faCamera,
    faCameraRetro, faClock, faImages, faCrosshairs, faVolumeDown, faServer);
 
 export const Category: React.FC = () => {

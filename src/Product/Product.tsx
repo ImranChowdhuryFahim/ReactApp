@@ -33,7 +33,7 @@ export const Product: React.FC<Props> = ({ product }) => {
 
   return (
     <div className="product-wrapper">
-      <div className="product-img-wrapper"><img src={`${imageUrl && imageUrl.Url}`} alt=''/></div>
+      <div className="product-img-wrapper"><img src={ process.env.PUBLIC_URL+ imageUrl?.Url } alt='Image'/></div>
       <div className="product-data-wrapper">
         <div className={`product-fav ${isFav && "is-in-fav"}`}>
           <FontAwesomeIcon
